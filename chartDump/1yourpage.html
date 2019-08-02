@@ -1,0 +1,2037 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://codersspace.com/cnp-irma/assets/css/bootstrap.css" type="text/css">
+
+    <link rel="stylesheet" href="http://codersspace.com/cnp-irma/assets/css/bootstrap.min.css" type="text/css">
+
+    
+
+    <link rel="stylesheet" href="http://codersspace.com/cnp-irma/assets/css/custom.css" type="text/css">
+
+    <link rel="stylesheet" href="http://codersspace.com/cnp-irma/assets/css/no-more-table.css" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<style type="text/css">
+#langdrop:hover .dropdown-menu {display: block;}
+</style>
+
+
+    <title>IFA Academy</title>
+
+    <!-- <title>Date picker</title> -->
+
+  </head>
+
+  <body>
+
+   <!--header-->
+
+    <div class="container">
+
+    <div class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-top">
+
+  <a class="navbar-brand" href="http://codersspace.com/cnp-irma/"><img src="http://codersspace.com/cnp-irma/assets/images/CNPlogo.png"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+
+
+  <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto" id="menu">
+
+      <li class="nav-item dropdown" id="langdrop">
+
+        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+          <i class="fas fa-globe"></i>Language
+
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="show_ang">
+
+          <a class="dropdown-item" href="http://codersspace.com/cnp-irma/user/switchLang/english">English</a>
+
+          <!-- <a class="dropdown-item" href="http://codersspace.com/cnp-irma/user/switchLang/spanish">Spanish</a> -->
+
+          <a class="dropdown-item" href="http://codersspace.com/cnp-irma/user/switchLang/greek">Greek</a>
+
+        </div>
+
+      </li>
+
+      <li class="nav-item active">
+
+          <a class="nav-link" href="http://codersspace.com/cnp-irma/"><span>|</span><i class="fas fa-home"></i>Dashboard</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="http://codersspace.com/cnp-irma/logout"><span>|</span><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+   </div>
+
+    </div>
+    
+
+    <!--header-end-->
+
+<div class="clearfix"></div>
+<link href="http://codersspace.com/cnp-irma/assets/css/nv.d3.css" rel="stylesheet">
+  <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;color: black;padding:10px 5px;border-style:solid;border-width:2px;overflow:hidden;word-break:normal;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;color: black;font-weight:normal;padding:10px 5px;border-style:solid;border-width:2px;overflow:hidden;word-break:normal;}
+  .tg .tg-8o5d{background-color:#c2ed80; border-style:solid;border-width:2px;}
+  .tg .tg-v88f{background-color:#ede480; border-style:solid;border-width:2px;}
+  .tg .tg-b286{background-color:#edb380; border-style:solid;border-width:2px;}
+  .tg .tg-ouex{background-color:#e37362; border-style:solid;border-width:2px;}
+  .tg .tg-lkh3{background-color:#8cc437; border-style:solid;border-width:2px;
+    .bullet .measure.s0 { fill: red; }
+
+    .axis text {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: black;
+      stroke: #000;
+      shape-rendering: crispEdges;
+
+    }
+
+    .bar {
+      fill: steelblue;
+      fill-opacity: .9;
+    }
+
+    .x.axis path {
+      display: none;
+    }
+
+    label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    #ex0 {
+      width: 600px;
+      height: 300px;
+      position: relative;
+      color:black !important;
+    }
+    #ex0, p{
+      color:black !important;
+    }
+
+    .tooltip {
+      background-color: black !important;
+    }
+
+    .google-visualization-tooltip {  padding: 1px !important; font-size:10px;} 
+    .google-visualization-tooltip-item-list { padding: 0px !important;  margin:1px !important;}
+    .google-visualization-tooltip-item    { overflow:hidden; max-width:210px !important; height:10px !important; padding: 0px !important; margin:1px !important; font-size:9px; white-space:nowrap;}
+    .google-visualization-tooltip-item span:nth-child(2) { display:inline-block; width:150px !important; text-align:right !important; }
+    .google-visualization-tooltip-item span:nth-child(3) { display:inline-block; width:50px !important; text-align:right !important; background-color:white;};
+
+
+
+    </style>
+
+       <style type="text/css">
+  td, th{
+    padding: 5px 0.5px;
+    color:#ffffff;
+  }
+  .bar-table td{
+    text-align: right;
+    padding-right: 5px;
+  }
+  .matrix-box td, .matrix-box th{
+    color: black;
+    text-align: center;
+  }
+
+  .myProgress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+#myBar {
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    background-color: green;
+}
+.matrix-box th, .matrix-box td {
+   border: 0px solid black;
+} 
+.square {
+    background: red;
+    padding: 2px;
+}
+.square span {
+    color: #000;
+}
+
+.shadow {
+   -moz-box-shadow:    inset 10px 10px #000000;
+   -webkit-box-shadow: inset 10px 10px #000000;
+   box-shadow:         inset 10px 10px #000000;
+}
+    </style>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <!--section1-->
+   <div class="container">
+   <a href="#" class="back-page" onclick="goBack()"><i class="fas fa-backward bck-icon"></i>Back</a>
+   <div class="form-page form-page2">
+   <h3 class="head2">IRMA &nbsp;| &nbsp; Overview</h3>
+
+        <div class="row report_section">
+          <div class="col-md-11">
+            <section class="widget">
+              <header>
+               <span class="sub-head">Score</span>
+                <!-- <h4>
+
+                  <i class="fa fa-bar-chart-o"></i> 
+                </h4> -->
+              </header>
+              <div class="body">
+                <div class="gallery with-transitions" id="chart"></div>
+                <script src="http://codersspace.com/cnp-irma/assets/js/d3.v3.js"></script>
+                <script src="http://codersspace.com/cnp-irma/assets/js/nv.d3.js"></script>
+                <script src="http://codersspace.com/cnp-irma/assets/js/utils.js"></script>
+                <script src="http://codersspace.com/cnp-irma/assets/js/models/bullet.js"></script>
+                <script src="http://codersspace.com/cnp-irma/assets/js/bulletChart.js"></script>
+<table width="100%;" class="bar-table">
+                      <tr>
+                        <th colspan="126" style="text-align:center;"></th></tr>
+                                    <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Health Costs 3.000€ - 1.000.000€ (15)                               
+                            </td>
+                                                         <td colspan="75" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#FFA500;">
+                                <div id="bar_1" style="width:0%;height:100%;background-color:#FFA500;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="50" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(67,000.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_1 = 0;
+                          var id_1 =setInterval(frame_1, 10);
+                          var compare_value_1= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_1() {
+                              if (width_1 >= compare_value_1) {
+                                clearInterval(id_1);
+                              } else {
+                                  width_1++; 
+                                  $("#bar_1").css("width",width_1+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Temporary Work Disability (12)                               
+                            </td>
+                                                         <td colspan="60" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#FFFF00;">
+                                <div id="bar_2" style="width:0%;height:100%;background-color:#FFFF00;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="65" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(31,836.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_2 = 0;
+                          var id_2 =setInterval(frame_2, 10);
+                          var compare_value_2= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_2() {
+                              if (width_2 >= compare_value_2) {
+                                clearInterval(id_2);
+                              } else {
+                                  width_2++; 
+                                  $("#bar_2").css("width",width_2+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Residence Protection (8)                               
+                            </td>
+                                                         <td colspan="40" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_3" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="85" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(232,090.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_3 = 0;
+                          var id_3 =setInterval(frame_3, 10);
+                          var compare_value_3= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_3() {
+                              if (width_3 >= compare_value_3) {
+                                clearInterval(id_3);
+                              } else {
+                                  width_3++; 
+                                  $("#bar_3").css("width",width_3+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Health Costs 0€ - 3.000€ (6)                               
+                            </td>
+                                                         <td colspan="30" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_4" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="95" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(567,900.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_4 = 0;
+                          var id_4 =setInterval(frame_4, 10);
+                          var compare_value_4= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_4() {
+                              if (width_4 >= compare_value_4) {
+                                clearInterval(id_4);
+                              } else {
+                                  width_4++; 
+                                  $("#bar_4").css("width",width_4+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Family Protection (6)                               
+                            </td>
+                                                         <td colspan="30" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_5" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="95" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(556,668.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_5 = 0;
+                          var id_5 =setInterval(frame_5, 10);
+                          var compare_value_5= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_5() {
+                              if (width_5 >= compare_value_5) {
+                                clearInterval(id_5);
+                              } else {
+                                  width_5++; 
+                                  $("#bar_5").css("width",width_5+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Outpatient Care (6)                               
+                            </td>
+                                                         <td colspan="30" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_6" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="95" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(456,000.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_6 = 0;
+                          var id_6 =setInterval(frame_6, 10);
+                          var compare_value_6= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_6() {
+                              if (width_6 >= compare_value_6) {
+                                clearInterval(id_6);
+                              } else {
+                                  width_6++; 
+                                  $("#bar_6").css("width",width_6+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Studying / Children Occupational providing (6)                               
+                            </td>
+                                                         <td colspan="30" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_7" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="95" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(22,000.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_7 = 0;
+                          var id_7 =setInterval(frame_7, 10);
+                          var compare_value_7= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_7() {
+                              if (width_7 >= compare_value_7) {
+                                clearInterval(id_7);
+                              } else {
+                                  width_7++; 
+                                  $("#bar_7").css("width",width_7+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Critical Illnesses (4)                               
+                            </td>
+                                                         <td colspan="20" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#0000FF;">
+                                <div id="bar_8" style="width:0%;height:100%;background-color:#0000FF;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="105" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(676,050.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_8 = 0;
+                          var id_8 =setInterval(frame_8, 10);
+                          var compare_value_8= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_8() {
+                              if (width_8 >= compare_value_8) {
+                                clearInterval(id_8);
+                              } else {
+                                  width_8++; 
+                                  $("#bar_8").css("width",width_8+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Permanent Work Disability (2)                               
+                            </td>
+                                                         <td colspan="10" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#008000;">
+                                <div id="bar_9" style="width:0%;height:100%;background-color:#008000;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="115" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(440,496.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_9 = 0;
+                          var id_9 =setInterval(frame_9, 10);
+                          var compare_value_9= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_9() {
+                              if (width_9 >= compare_value_9) {
+                                clearInterval(id_9);
+                              } else {
+                                  width_9++; 
+                                  $("#bar_9").css("width",width_9+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              <tr>
+                            <td width="30%" style="color:#000;text-align:left;">
+                              Retirement Plan (2)                               
+                            </td>
+                                                         <td colspan="10" style="padding-right:0px;">
+                            <div class="myProgress" style="width:100%;  position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#008000;">
+                                <div id="bar_10" style="width:0%;height:100%;background-color:#008000;"></div>
+                              </div>
+                            </td>
+                                                          <td width="0.5%" colspan="115" style="padding-right:0px;">
+                                 <div class="myProgress" style="max-height:100px;margin-left:-1px; position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;"></div> 
+                              </td>
+                             
+                                                           <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+                              <td style="color: black;">(387,576.00)</td>
+
+                          </tr>
+
+                          <script type="text/javascript">
+                          $(document).ready(function() {
+                          var width_10 = 0;
+                          var id_10 =setInterval(frame_10, 10);
+                          var compare_value_10= 100;//parseInt("");
+                          //alert(compare_value);
+                          function frame_10() {
+                              if (width_10 >= compare_value_10) {
+                                clearInterval(id_10);
+                              } else {
+                                  width_10++; 
+                                  $("#bar_10").css("width",width_10+'%'); 
+                              }
+                          }
+                        });
+                          </script>
+                          <tr>
+                            <td></td>
+                                                          <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                0 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                1 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                2 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                3 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                4 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                5 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                6 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                7 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                8 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                9 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                10 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                11 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                12 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                13 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                14 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                15 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                16 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                17 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                18 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                19 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                20 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                21 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                22 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                23 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                24 
+                              </td>
+
+                                                            <td style="color:#000;padding:0px;text-align:left;" colspan="5">
+                                25 
+                              </td>
+
+                              
+                          </tr>
+
+                                              </table><br/>
+                    <br/>
+                    <br/>
+
+
+
+
+                   <!--  <div id="ex0"></div>
+                    <script type="text/javascript">
+                    var width = "100%",
+                    height = 80,
+                    margin = {top: 5, right: 40, bottom: 20, left: 100};
+                    var chart = nv.models.bulletChart()
+                    .width(width - margin.right - margin.left)
+                    .height(height - margin.top - margin.bottom);
+                    data = [
+                    {"title":" Retirement Plan (2) ","subtitle":"","ranges":[25],"measures":[Array],"markers":[Array],"color": "#8cc437"}
+
+                    ];
+                    dataWithLabels = [
+                    {"title":" ","subtitle":" ","ranges":[25],"measures":[25],"markers":[20],
+                    "rangeLabels":[' ',' ',''], "measureLabels":[''], "markerLabels":['Target Inventory'] }
+                    ];
+                    
+                    var vis = d3.select("#chart").selectAll("png")
+                    .data(data)
+                    .enter().append("svg")
+                    .attr("class", "bullet nvd3")
+                    .attr("width", width)
+                    .attr("height", height);
+                    vis
+                    .transition()
+                    .duration(3000)
+                    .call(chart);
+                    window.transition = function() {
+                      vis.datum(randomize)
+                      .transition()
+                      .duration(3000)
+                      .call(chart);
+                      vis2.datum(randomize)
+                      .transition()
+                      .duration(3000)
+                      .call(chart2);
+                    };
+                    function randomize(d) {
+                      if (!d.randomizer) d.randomizer = randomizer(d);
+                      d.ranges = d.ranges.map(d.randomizer);
+                      d.markers = d.markers.map(d.randomizer);
+                      d.measures = d.measures.map(d.randomizer);
+                      return d;
+                    }
+
+                    function randomizer(d) {
+                      var k = d3.max(d.ranges) * .2;
+                      return function(d) {
+                        return Math.max(0, d + k * (Math.random() - .5));
+                      };
+                    }
+                    d3.select('body');
+                    </script> -->
+                                        </div>
+                  </section>
+                </div>
+</div>
+  
+ 
+ <!-- 	<div class="score-head">
+ 		<span class="score-text">Family Protection</span>
+ 		<img src="http://codersspace.com/cnp-irma/assets/images/IRMA_final1.jpg">
+ 	</div> -->
+ 	<span class="sub-head">Risk Profiling</span>
+ 	<div class="risk-head">
+ 		<span class="risk-text">6.7 / 25</span>
+       		<span class="risk-text">26.8 % </span>
+ 		<div id="container1" style="height:400px;"></div>
+     	</div>
+ 	<style type="text/css">
+  .matrix-box th, .matrix-box td {
+   border: 0px solid black;
+} 
+.square {
+    background: red;
+    padding: 2px;
+}
+.square span {
+    color: #fff;
+}
+
+.shadow {
+   -moz-box-shadow:    inset 10px 10px #000000;
+   -webkit-box-shadow: inset 10px 10px #000000;
+   box-shadow:         inset 10px 10px #000000;
+}
+ </style>
+ 	<div class="matrix-head">
+ 		<div class="row">
+ 		<div class="col-md-10">
+ 		<span class="sub-head">Risk Matrix</span>
+ 		<!-- <img src="http://codersspace.com/cnp-irma/assets/images/IRMA_final3.png"> -->
+    <div class="row text-center"></div>
+          <table id="irmatable" style="border-collapse:separate;border-spacing:6px;margin-left: 100px;" border="0" bordercolor="black" class="matrix-box"  width="100%" height="800px" align="center" >
+            <tr border="2px">
+               <th border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                                                                                                                                                                 
+                                                                                 
+              </th>
+             <th border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFFF00; border-color: #000000; border-size: 2px; border-style: solid;">
+                <center>
+                                                                                                                                                                                     
+                                                                                                                  
+                </center></th>
+                <th border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                    <h4>HC10k-1mil</h4>                                                                                                     
+                                                                                                                      </center>
+                </th>
+                 <th border="2px" class="shadow" width="20%" height="120px" style="background-color:#FF0000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                            
+                  </center>
+                </th>
+                <th border="2px" class="shadow" width="20%" height="120px" style="background-color:#FF0000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                              
+                  </center>
+                </th>
+              </tr>
+              <tr border="2px">
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#008000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                <h4>SI</h4>                                         
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                        <h4>RP</h4> 
+                                                                                                                              
+                  </center>
+                </td>
+                 <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFFF00; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                    <h4>TWD</h4>                     
+                                                                                                                             
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                            
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FF0000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                                
+                  </center>
+                </td>
+              </tr>
+              <tr border="2px">
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#008000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                         
+                  </center>
+                </td>
+              <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                            <h4>OC</h4>                    <h4>HC0-10k</h4>                                                                                                                         
+                                                                                                                             
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFFF00; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                                
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px"  style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                             
+                  </center>
+                </td>
+               <td border="2px" class="shadow" width="20%" height="120px"  style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                      </center>
+                </td>
+              </tr>
+              <tr border="2px">
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#008000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                            <h4>ReP</h4>                                                            
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                                
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                        <h4>FP</h4>                                                            <h4>SOP</h4>                          
+                  </center>
+                </td>
+               <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFFF00; border-color: #000000; border-size: 2px; border-style: solid;"> 
+                  <center>                       
+                                                                                                                                                                                                        
+                                                                                                                              
+                  </center>
+                </td>
+                 <td border="2px" class="shadow" width="20%" height="120px"  style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                             
+                  </center>
+                </td>
+              </tr>
+              <tr border="2px">
+                 <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#008000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                        
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#008000; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                            <h4>PWD</h4>                                                             
+                                                                                                                            
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#0000FF; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                            
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px" style="background-color:#FFFF00; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                             
+                  </center>
+                </td>
+                <td border="2px" class="shadow" width="20%" height="120px"  style="background-color:#FFA500; border-color: #000000; border-size: 2px; border-style: solid;">
+                  <center>
+                                                                                                                                                                                                         
+                                                                                                                              
+                  </center>
+                </td>
+              </tr>
+            </table>
+ 		</div>
+ 		<br>
+    <div class="row">
+    <!-- <div class="col-md-12"> -->
+      <!--  <span class="sub-head">Legend</span> <br/> -->
+      <div class="col-md-3" style="margin-left: 125px;">
+        
+          <span>TWD | Temporary Work Disability</span><br/>
+        <span>PWD | Permanent Work Disability</span><br/>
+        <span>FP | Family Protection</span><br/>
+        <span>OC | Outpatient Care</span><br/>
+        
+      
+      </div>
+        <div class="col-md-3">
+        
+         
+          <span>HC0-10k | Health Costs 0€ - 3.000€</span><br/>
+        <span>HC10k-1mil | Health Costs 3.000€ - 1.000.000€</span><br/>
+        <span>SI | Critical Illnesses</span><br/>
+       
+        
+      
+      </div>
+        <div class="col-md-4">
+         <span>ReP | Retirement Plan</span><br/>
+         <span>SOP | Studying / Children Occupational providing</span><br/>
+        <!-- <span>LP | Legal Protection </span><br/>
+        <span>SBP | Small Business Protection</span><br/>
+        <span>FL | Family Liability</span><br/> -->
+         <span>RP | Residence Protection</span><br/>
+        
+      
+      </div>
+
+      
+    </div><!-- </div> --><br/><br/>
+		<div class="col-md-12" style="margin-top: 55px;">
+			<textarea class="form-control rounded-0" rows="3" name="message" value="" id="comment" placeholder="Ειδικες Παρατηρήσεις"></textarea>
+		</div>
+		<div class="col-md-8">
+ 			<div class="btn-bg3">
+ 			
+      <form action="http://codersspace.com/cnp-irma/final-report" method="POST" target="_blank">
+      <a href="http://codersspace.com/cnp-irma/calculators/2605" class="btn btn-9 btn-primary" target="_blank">Life Calculator</a>
+      

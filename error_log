@@ -1,0 +1,13 @@
+[26-Jun-2019 15:47:38 UTC] PHP Fatal error:  Call to undefined method User_model::get_pension_pdf() in /home/coderssp/public_html/cnp-irma/application/views/IRMA_report_final.php on line 172
+[26-Jun-2019 15:48:19 UTC] PHP Fatal error:  Call to undefined method User_model::get_pension_pdf() in /home/coderssp/public_html/cnp-irma/application/views/IRMA_report_final.php on line 172
+[29-Jun-2019 20:27:17 UTC] PHP Warning:  Unterminated comment starting line 5540 in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 5540
+[29-Jun-2019 20:27:17 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 5544
+[29-Jun-2019 20:27:20 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 10295
+[08-Jul-2019 11:36:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 578
+[08-Jul-2019 11:36:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 1833
+[08-Jul-2019 11:36:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 1833
+[08-Jul-2019 11:41:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 578
+[08-Jul-2019 11:41:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/controllers/User.php on line 578
+[15-Jul-2019 06:15:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/views/IRMA_final_arc.php on line 336
+[15-Jul-2019 06:15:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/views/IRMA_final_arc.php on line 336
+[15-Jul-2019 06:16:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/coderssp/public_html/cnp-irma/application/views/IRMA_final_arc.php on line 336

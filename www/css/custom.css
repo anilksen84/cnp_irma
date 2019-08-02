@@ -1,0 +1,153 @@
+body{ margin: 0px; padding: 0px; color: #333333; font-family: 'Open Sans', sans-serif !important;}
+a{ text-decoration: none; color: #000000; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
+a:focus, a:hover{ outline: none !important;}
+img{ border: none;}
+input{ margin: 0px; padding: 0px;}
+body, html, div, p{ margin: 0px; padding: 0px;}
+h1{ margin:0px !important;}
+.container{ max-width: 1272px; width: 100%; text-align: center;}
+
+/*header*/
+.header{ float: left; width: 100%; display: inline-block;}
+.header .navbar-brand{ float: left;}
+.header .navbar-brand img{ max-width: 200px; width: 100%; margin: 0px;}
+.header .nav-top{float: left; width: 100%; display: inline-block; background: none!important; padding-left: 23px; padding-right: 23px;}
+.header .nav-right{ float: right;}
+.header .nav-top ul{ float: right; margin-top: 45px;}
+.header .nav-top ul li a{ font-family: 'Open Sans', sans-serif; font-size: 16px!important; font-weight: normal; color: #0b2b50!important; padding-right: 15px;}
+.header .nav-top ul li a:hover{ color: #4ab0ce!important; transition: all 0.5s ease-in-out !important;}
+.header .nav-top ul li a span{ display: inline-block; color: #0b2b50; padding-right: 15px;}
+.header .nav-top ul li a i{ padding-right: 7px;}
+/*header ends*/
+
+/*section1*/
+.icon-bg{ max-width: 242px; width: 100%; height: 204px; border: 3px solid #0b2b50; border-radius: 10px; display: inline-block; padding: 28px 0px 28px 0px; margin-top: 40px;}
+.icon-bg img{ text-align: center; max-width: 90px; width: 100%; height: 90px;}
+.icon-bg .icon-text{ font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 700; color: #0b2b50; display: block; padding-top: 15px;}
+/*section1 ends*/
+
+/*meeting-section*/
+.meeting-section{ width:100%; border: 3px solid #0b2b50; border-radius: 10px; text-align: center; padding: 30px 0px 30px 0px; margin-top: 40px; max-width: 1192px; display: inline-block;}
+.text-border{ text-align: center; border-right: 2px solid #0b2b50;}
+.meeting-section img{ text-align: center; max-width: 90px; width: 100%; height: 90px;}
+.meeting-section .meeting-text{ font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 700; color: #0b2b50; display: block; padding-top: 10px;}
+.meeting-section ul{ margin: 0px; display: inline-block;}
+.meeting-section ul li{ font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #0b2b50; line-height: 30px; text-align: left;}
+/*meeting-section ends*/
+
+/*chart-section*/
+.chart-section{ width:100%; border: 3px solid #0b2b50; border-radius: 10px; text-align: center; padding: 30px 0px 30px 0px; margin-top: 40px; max-width: 1192px; display: inline-block;}
+.chart-section img{ max-width: 444px; width: 100%;}
+.chart-section .marital-head{ font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 700; color: #0b2b50; display: block; padding-bottom: 30px; width: 100%;}
+.chart-section .sec-1{ width:100%; text-align: center; padding: 0px 20px;  display: inline-block;}
+.chart-section .sec-1 .left-side{ font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #0b2b50; line-height: 30px; text-align: left; width: 60%;  display: inline-block;}
+.chart-section .sec-1 .right-side{ font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #0b2b50; line-height: 30px; text-align: right; width: 30%; display: inline-block;}
+/*chart-section ends*/
+
+/*footer*/
+.footer{ width: 100%; float: left; margin: 40px 0px 10px 0px; padding: 0px 28px;}
+.footer p.copy-text{ font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: normal; color: #0b2b50; text-align: left;}
+.footer p.develop-text{ font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: normal; color: #0b2b50; text-align: right;}
+/*footer ends*/
+
+/*login*/
+.header .nav-login ul{ margin-top: 10px;}
+.login-bg{ background: url(../images/Savin-NY-Website-Background-Web.jpg) no-repeat center center fixed; background-size: cover;}
+.top-mrgn{ margin-top: 200px; margin-bottom: 70px;}
+.login-back{ margin: 0px auto; padding: 50px; text-align: center; background-color: #f2f2f2; max-width: 475px; width: 100%; box-shadow: 0px 0px 10px 5px #666666;}
+.form1{ padding-top: 50px;}
+.form1 .icon1 img{ max-width: 38px; width: 100%; display: inline-block;}
+.form1 .input1{ display: inline-block; max-width: 266px; width: 100%; border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-left: none; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal;}
+.btn-1{ max-width: 302px; width: 100%; background-color: #0b2b50; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal;}
+.btn-1:hover{ background-color: #4ab0ce!important; transition: all 0.5s ease-in-out !important;}
+.login-ftr{ position: fixed; left: 0; right: 0; bottom: 0;}
+/*login ends*/
+
+
+/*customer_dashboard*/
+.icon-bg .big-text{ font-family: 'Open Sans', sans-serif; font-size: 50px; font-weight: 700; color: #0b2b50; display: block;}
+.table1{ margin-top: 20px; width: 100%; float: left; padding: 0px 40px;}
+.table1 th, .table1 td{ text-align: left;}
+.form2{ padding-left: 25px; margin-top: 40px; float: left;}
+.form3{ padding-right: 15px; margin-top: 40px; float: right;}
+.table-text{ font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #0b2b50; text-align: left; padding-left: 25px;}
+.nav2{ float: right; padding-right: 25px;}
+
+
+/*customer_dashboard ends*/
+
+/*media query*/
+@media screen and (max-width: 1190px){
+	.footer, .table1, .form2, .form3, .table-text, .nav2{ padding: 0px;}
+}
+
+@media screen and (max-width: 990px){
+	.header .navbar-toggler{ float: right; margin-top: 45px; color: #0b2b50!important; border: none;}
+	.header .navbar-toggler:hover, .header .navbar-toggler:focus{ text-decoration: none;}
+	.header .nav-top { padding-left: 10px; padding-right: 10px;}
+	.header .nav-right{ float: left; width: 100%;}
+	.header .nav-top ul{ margin-top: 0px; float: left;}
+	.header .nav-top ul li{ text-align: left;}
+	.header .nav-top ul li a span{ display: none; padding-right: 0px;}
+	.header .nav-top ul li a{ padding-right: 0px; padding-top: 15px;}
+	
+	.meeting-section ul{ padding-left:70px;}
+}
+
+@media screen and (max-width: 880px){
+	.icon-bg{ width: 95%; height: 174px; padding: 20px 0px 20px 0px; margin-top: 30px;}
+	.icon-bg img{ width: 95%; height: 85px;}
+	.icon-bg .icon-text{ padding-top: 10px; font-size: 15px;}
+	.chart-section ul.left-side{ padding-left: 10px;}
+	.chart-section{ padding: 20px 30px;}
+	.chart-section .text-border{ border-right: none; border-bottom: 2px solid #0b2b50;}
+	.table1 .table-bordered{ border: none!important;}
+}
+
+@media screen and (max-width: 768px){
+	.icon-bg{ max-width: 352px; width: 100%; height: 164px; padding: 15px 0px 15px 0px; margin-top: 20px;}
+	.meeting-section ul{ padding-left:5px; padding-right: 5px;}
+	.meeting-section ul li{ font-size: 15px;}
+	.chart-section img{ padding-bottom: 20px;}
+	.chart-section .marital-head{ padding-bottom: 20px; padding-top: 20px;}
+}
+
+@media screen and (max-width: 655px){
+	.footer{ text-align: center; margin-top: 10px;}
+	.footer p.copy-text{ display: inline-block;}
+	.footer p.develop-text{ display: inline-block;}
+	.form2, .form3, .nav2, .table-text{ float: none;}
+	.form3, .nav2{ margin-top: 20px;}
+}
+
+@media screen and (max-width: 575px){
+	.meeting-section{padding: 20px 30px;}
+	.text-border{ border-right: none; border-bottom: 2px solid #0b2b50;}
+	.meeting-section ul{ padding-top: 20px;}
+	.meeting-section .meeting-text{ padding-bottom: 20px;}
+}
+
+@media screen and (max-width: 480px){
+	.chart-section .sec-1{ padding: 0px;}
+	.chart-section .sec-1 .left-side{ font-size:14px; width: 80%;}
+	.chart-section .sec-1 .right-side{ font-size:14px; width: 10%;}
+	.top-mrgn{ margin-top: 50px; margin-bottom: 70px;}
+	.login-back{ padding: 20px;}
+	.form1{ padding-top: 20px;}
+	.form1 .icon1 img{ width: 90%;}
+	.form1 .input1{ width: 80%; }
+	.btn-1{ width: 95%;}
+	.table1 td{ word-break: break-all;}
+	
+}
+@media screen and (max-width: 420px){
+	.icon-bg{ width: 90%; height: 164px; padding: 15px 0px 15px 0px; margin-top: 20px;}
+	.icon-bg img{ width: 65%; height: 70px;}
+	.icon-bg .icon-text{ padding-top: 10px; font-size: 15px;}
+	.icon-bg .icon-text.wrd-brk{ word-break: break-all;}
+	.meeting-section ul li{ font-size: 14px;}
+}
+
+@media screen and (max-width: 360px){
+	.header .navbar-brand img{ max-width: 120px; width: 100%; margin: 0px;}
+}
